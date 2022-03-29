@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  background: var(--color-gray-100);
 `;
 
 const Title = styled.h2`
