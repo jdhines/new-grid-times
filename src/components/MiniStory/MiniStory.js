@@ -3,15 +3,18 @@ import styled from 'styled-components/macro';
 
 const MiniStory = ({ id, image, title }) => {
   return (
-    <a href={`/story/${id}`}>
+    <StoryLink href={`/story/${id}`}>
       <Wrapper>
         <Image alt={image.alt} src={image.src} />
         <Title>{title}</Title>
       </Wrapper>
-    </a>
+    </StoryLink>
   );
 };
 
+const StoryLink = styled.a`
+  /* width: 150px; */
+`;
 const Wrapper = styled.article`
   display: flex;
   flex-direction: column;
